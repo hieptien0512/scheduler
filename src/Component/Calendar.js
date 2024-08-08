@@ -214,9 +214,6 @@ function Calendar({ token }) {
                             </table>
                         </div>
 
-                        <button className="btn btn-primary mb-2" >View</button>
-
-
                         <ScheduleComponent width='100%' currentView='Week'
                             selectedDate={new Date()}
                             eventSettings={eventSettings}
