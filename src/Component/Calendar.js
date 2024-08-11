@@ -219,6 +219,7 @@ function Calendar({ token }) {
                             eventSettings={eventSettings}
                             group={group}
                             actionComplete={handleActionComplete}
+                            firstDayOfWeek={1}
                         >
                             <ViewsDirective>
                                 <ViewDirective option='Week' />

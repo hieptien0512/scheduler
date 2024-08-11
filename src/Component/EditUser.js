@@ -23,6 +23,7 @@ function EditUser({ token }) {
 
             const userData = await response.json();
             setFormValue(userData);
+            console.log(token);
         };
 
         fetchUserData();
@@ -51,7 +52,7 @@ function EditUser({ token }) {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6 mt-4">
-                        <h4 className="mb-4">Add user</h4>
+                        <h4 className="mb-4">Edit user</h4>
                         <p className="text-warning"> {message} </p>
                         <form onSubmit={handleSubmit}>
                             <div className="mb-3 row">
