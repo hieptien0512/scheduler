@@ -3,7 +3,10 @@ import React from "react";
 function Footer() {
     return (
         <React.Fragment>
-            <footer className="bg-warning">
+            <footer style={{
+                background: "linear-gradient(to right, #f9f777, #f9f777)",
+                color: "white"
+            }}>
                 <div className="container" >
                     <div className="row">
                         <div className="col-md-12">

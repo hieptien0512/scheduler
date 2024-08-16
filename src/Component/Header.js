@@ -16,7 +16,10 @@ function Header({ userRole, setToken, setUserRole }) {
 
     return (
         <React.Fragment>
-            <nav className="navbar navbar-expand-lg bg-warning">
+            <nav className="navbar navbar-expand-lg" style={{
+                background: "linear-gradient(to right, #f9f777, #f9f777)",
+                color: "white"
+            }}>
                 <div className="container">
                     <Link to={'/'} className="navbar-brand">Scheduler</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
