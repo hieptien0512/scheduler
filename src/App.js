@@ -25,7 +25,7 @@ import { useState } from 'react';
 // Registering Syncfusion license key
 import { registerLicense } from '@syncfusion/ej2-base';
 
-registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCdkx3Rnxbf1x0ZFxMYltbQHNPMyBoS35RckVkWHteeXZSQmZfV0Zz');
+registerLicense('Ngo9BigBOggjHTQxAR8/V1NCaF1cWWhAYVJzWmFZfVpgfV9EZ1ZVQWYuP1ZhSXxXdk1iX39XcnNRQGhbUkM=');
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));
