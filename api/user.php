@@ -91,7 +91,7 @@ switch ($method) {
         $user_email = $user_post_data->email;
         $password = $user_post_data->password;
 
-        $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+        // $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
         function generateRandomColor()
         {
@@ -100,7 +100,7 @@ switch ($method) {
 
         $random_color = generateRandomColor();
 
-        $query = "INSERT INTO tbl_user (user_name, user_email, password, color) VALUES ('$user_name', '$user_email', '$hashed_password', '$random_color');";
+        $query = "INSERT INTO tbl_user (user_name, user_email, password, color) VALUES ('$user_name', '$user_email', '$password', '$random_color');";
         $result = mysqli_query($db_conn, $query);
 
         if ($result) {
